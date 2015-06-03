@@ -1,0 +1,162 @@
+$globals
+    orange: #f67500
+    blue: #296ebd
+    dark_gray: #444
+    mid_gray: #777
+    light_gray: #aaa
+    lighter_gray: #ddd
+    lightest_gray: #f5f5f5
+
+*
+    margin: 0
+    padding: 0
+
+body
+    font: 14px/20px normal "Helvetica Neue", Helvetica, sans-serif
+
+#app
+    padding: 50px
+
+#soundcloud-widget
+    position: relative
+
+.search-btn
+    position: absolute
+    top: -2px
+    right: 0
+    padding: 9px 10px
+    cursor: pointer
+    color: $lighter_gray
+    &.selected
+        color: $orange
+
+h2
+    color: $orange
+    font-size: 1em
+    padding-bottom: 10px
+    border-bottom: 5px solid $orange
+
+.search
+    background: $lightest_gray
+    position: relative
+
+    input
+        font: inherit
+        font-weight: light
+        display: block
+        width: 100%
+        -webkit-appearance: none
+        padding: 12px
+        padding-left: 45px
+        border: none
+        outline: none
+        box-shadow: none
+        background: none
+        color: $dark_gray
+
+    .fa-search
+        color: $light_gray
+        position: absolute
+        top: 15px
+        left: 17px
+
+.card
+    background: #fff
+    box-shadow: 0 2px 4px rgba(#000, 0.05)
+    border: 1px solid $lighter_gray
+
+.empty
+    text-align: center
+    font-style: italic
+    color: $light_gray
+    padding: 30px
+
+.block
+    position: relative
+    padding: 15px
+    border-bottom: 1px solid $lighter_gray
+    &:last-child
+        border-bottom: none
+    &.focus
+        background: $lightest_gray
+
+    .indicator
+        position: absolute
+        top: 50%
+        margin-top: -5px
+        right: 15px
+        color: $lighter_gray
+
+.avatar, .artwork
+    background: $dark_gray
+    float: left
+    width: 40px
+    height: 40px
+
+.details
+    margin-left: 55px
+
+.stats
+    font-size: 0.9em
+    color: $light_gray
+
+    .stat
+        margin-right: 10px
+
+.username
+    font-weight: 600
+    color: $dark_gray
+
+.track .title
+    font-weight: 600
+    color: $blue
+
+.kind-toggle
+    position: absolute
+    top: 11px
+    right: 15px
+
+    i
+        color: $light_gray
+        padding: 3px 7px
+        border: 1px solid rgba(#000, 0.1)
+
+        &:first-child
+            border-top-left-radius: 10px
+            border-bottom-left-radius: 10px
+
+        &:last-child
+            border-top-right-radius: 10px
+            border-bottom-right-radius: 10px
+
+    &.selected-tracks i.select-tracks
+        color: #fff
+        background: rgba(#000, 0.4)
+        border: none
+
+    &.selected-users i.select-users
+        color: #fff
+        background: rgba(#000, 0.4)
+        border: none
+
+.bar
+    background: $lightest_gray
+
+.bar-item
+    display: inline-block
+    padding: 7px 15px
+    padding-bottom: 5px
+    border-bottom: 2px solid transparent
+    text-transform: uppercase
+    font-size: 10px
+    color: $light_gray
+    cursor: pointer
+    &:hover
+        color: $mid_gray
+    &.selected
+        color: $dark_gray
+        border-bottom: 2px solid $dark_gray
+
+    i
+        margin-right: 5px
+
